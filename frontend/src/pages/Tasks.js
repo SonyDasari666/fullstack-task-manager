@@ -15,6 +15,7 @@ function Tasks() {
 
   useEffect(() => {
     if (token) fetchTasks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
   const addTask = async () => {
